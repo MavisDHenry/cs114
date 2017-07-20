@@ -11,3 +11,14 @@ if mymove in ('right' , 'left'):
         print('the pile of snowflakes smothers you in its gentle cold embrace')
         print('how long do you embrace?')
         mytime = input()
+        if mytime in (<30):
+            print('you feel cold but otherwise your alright')
+            print('you have succesfully befriended the snowflake pile')
+        elif mytime in (>30):
+            print('you freeze to death thus ending you adventure')
+elif mymove == ('sword'):
+    print('snowflake is cut in half')
+    print('a pile of snowflakes attempts to run away from you')
+    myact = input()
+    if myact == ('chase'):
+        print('you catch up to the pile of snowflakes')
