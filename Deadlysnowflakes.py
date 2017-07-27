@@ -3,7 +3,7 @@ possible_moves = {'right', 'left'}
 move_q = "Do you want to move {} or {}? ".format(*possible_moves)
 
 print('Death to snowflakes')
-print('a snowflake approches at an extremely high velocity')
+print('a snowflake approaches at an extremely high velocity')
 mymove = input(move_q)
 if mymove in possible_moves:
     print('you narrowly avoided the deadly snowflake')
@@ -17,7 +17,7 @@ if mymove in possible_moves:
         mytime = input()
         if int(mytime) < 30:
             print('you feel cold but otherwise your alright')
-            print('you have succesfully befriended the snowflake pile')
+            print('you have successfully befriended the snowflake pile')
         elif int(mytime) > 30:
             print('you freeze to death thus ending you adventure')
         else:
@@ -25,7 +25,7 @@ if mymove in possible_moves:
     elif mymove1 == ('sword'):
         print('you cut the snowflake pile in half creating two!')
         print('the snowflake piles attack with killer intent.')
-        print('can fight or run what will you do')
+        print('you can fight or run what will you do')
         mymove2 = input()
         if mymove2 ==('fight'):
             print('you charge into battle which do you attack pile1 or pile2?')
@@ -62,8 +62,8 @@ elif mymove == ('sword'):
         print('whar will you do? kill or spare.')
         myact1 = input()
         if myact1 == ('kill'):
-            print('you take your sword and procede to cut the pile of '
-                  'snowflakes into tiny peices')
+            print('you take your sword and proceed to cut the pile of '
+                  'snowflakes into tiny pieces')
             print('you walk away knowing the snowflakes are no more')
         elif myact1 == ('spare'):
             print('you pat the pile of snowflakes on the head and walk away.')
