@@ -26,7 +26,7 @@ if mymove in possible_moves:
         print('you cut the snowflake pile in half creating two!')
         print('the snowflake piles attack with killer intent.')
         print('can fight or run what will you do')
-        mymove2 = input
+        mymove2 = input()
         if mymove2 ==('fight'):
             print('you charge into battle which do you attack pile1 or pile2?')
             attack = input()
@@ -43,17 +43,19 @@ if mymove in possible_moves:
                 print('you can either run or fight')
                 attack1 = input()
                 if attack1 == ('fight'):
-                    print('Alas brave adventurer you have subcummed to the'
+                    print('Alas brave adventurer your body gives into th//e'
                           'dread cold')
-                    print("its enraged probly should've ran")
+                    print("its enraged probably should've ran")
                 elif attack1 == ('run'):
-                    print('you escape the raging pile of snoflakes but for how'
+                    print('you escape the raging pile of snowflakes but for '
+                          'how'
                           ' long?')
         elif mymove2 == ('run'):
             print('you escape the piles of snowflakes.')
 elif mymove == ('sword'):
     print('snowflake is cut in half')
     print('a pile of snowflakes attempts to run away from you')
+    print('you can chase it or ignore it what shall you do?')
     myact = input()
     if myact == ('chase'):
         print('you catch up to the pile of snowflakes')
