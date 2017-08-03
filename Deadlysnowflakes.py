@@ -43,7 +43,7 @@ if mymove in possible_moves:
                 print('you can either run or fight')
                 attack1 = input()
                 if attack1 == ('fight'):
-                    print('Alas brave adventurer your body gives into th//e'
+                    print('Alas brave adventurer your body gives into the'
                           'dread cold')
                     print("its enraged probably should've ran")
                 elif attack1 == ('run'):
@@ -72,6 +72,7 @@ elif mymove == ('sword'):
 else:
     print('you were mercilessly cut down by the snowflake your journey'
           ' comes to a close')
+
 print('a portal to a new world opens up what will you do?')
 myaction = input()
 if myaction in ('jump in' , 'go in' , 'use portal'):
