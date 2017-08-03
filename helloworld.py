@@ -1,5 +1,6 @@
 playerhp = int(100)
 flamehp = int(200)
+currentflamehp = playeratt
 playeratt = int((flamehp) - 25)
 flameatt = int(5 - playerhp)
 print('hello your about to enter a world of burning or a building that\'s on '
@@ -19,8 +20,7 @@ if myanswer == 'yes':
             myact = input()
             if myact == "fight":
                 playeratt
-                flamehp = int(playeratt)
-                print(flamehp)
+                currentflamehp
             elif myact == "run":
                 print('you flee from the flame only to be cornered.')
                 print('will you fight or be engulfed by the flame.')
