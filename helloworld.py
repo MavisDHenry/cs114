@@ -13,6 +13,7 @@ myanswer = input()
 if myanswer == 'yes':
     print('you walk through the door into a hallway that is covered in flame')
     print('will you approach the flame?')
+    myanswer = input()
     if myanswer == 'yes':
         print('The flame attacks')
         while int(currentflamehp) > 0:
