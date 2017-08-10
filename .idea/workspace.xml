@@ -18,8 +18,8 @@
       <file leaf-file-name="helloworld.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helloworld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1010">
-              <caret line="210" column="58" lean-forward="false" selection-start-line="210" selection-start-column="58" selection-end-line="210" selection-end-column="58" />
+            <state relative-caret-position="40">
+              <caret line="233" column="30" lean-forward="true" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -424,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1501873793588</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="More fights">
+      <created>1502137010711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1502137010711</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -496,7 +503,8 @@
     <MESSAGE value="function" />
     <MESSAGE value="Changes" />
     <MESSAGE value="Dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dictionary" />
+    <MESSAGE value="More fights" />
+    <option name="LAST_COMMIT_MESSAGE" value="More fights" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -669,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1010">
-          <caret line="210" column="58" lean-forward="false" selection-start-line="210" selection-start-column="58" selection-end-line="210" selection-end-column="58" />
+        <state relative-caret-position="40">
+          <caret line="233" column="30" lean-forward="true" selection-start-line="233" selection-start-column="30" selection-end-line="233" selection-end-column="30" />
           <folding />
         </state>
       </provider>
