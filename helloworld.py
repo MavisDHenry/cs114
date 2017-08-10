@@ -38,10 +38,10 @@ if myanswer == 'yes':
                     continue
                 else:
                     print('you have been burned to death!')
-                    break
+                    quit()
             else:
                 print('the flame engulfs you')
-                break
+                quit()
     print('you have gained a level you can now use the heal command in battle.')
     currentplayerhp = playerhp['level_2']
     print('you come to a fork in the hallway. will you go left or right?')
@@ -67,13 +67,17 @@ if myanswer == 'yes':
                             print('alas you have died by the flame')
                             quit()
                     elif myact == 'heal':
-                        currentplayerhp += 10
-                        print('the flame warden retaliates with an attack.')
-                        currentplayerhp -= 8
-                        print('your hp ' + str(currentplayerhp))
-                        if currentplayerhp < 0:
-                            print('alas you have died by the flame')
-                            quit()
+                        if currentplayerhp >= playerhp[level_2]:
+                            print('your already at max hp')
+                            return
+                        else:
+                            currentplayerhp += 10
+                            print('the flame warden retaliates with an attack.')
+                            currentplayerhp -= 8
+                            print('your hp ' + str(currentplayerhp))
+                            if currentplayerhp < 0:
+                                print('alas you have died by the flame')
+                                quit()
                     elif myact == 'run':
                         print('you flee from the flame warden in terror '
                               'only to be caught by him moments later')
@@ -116,14 +120,17 @@ if myanswer == 'yes':
                         print('alas brave adventurer you have been incinerated.')
                         quit()
                 elif myact == 'heal':
-                    currentplayerhp += 10
-                    print(currentplayerhp)
-                    print('the minor flame attacks')
-                    currentplayerhp -= 5
-                    print('your hp ' + str(currentplayerhp))
-                    if currentplayerhp < 0:
-                        print('alas brave adventurer you have been incinerated.')
-                        quit()
+                    if currentplayerhp >= playerhp[level_2]:
+                        print('your already at max hp')
+                        return
+                    else:
+                        currentplayerhp += 10
+                        print('the flame warden retaliates with an attack.')
+                        currentplayerhp -= 8
+                        print('your hp ' + str(currentplayerhp))
+                        if currentplayerhp < 0:
+                            print('alas you have died by the flame')
+                            quit()
                 elif myact == 'run':
                     print('you escape the minor flame for a brief moment')
                     print('would you like to heal before the minor flame attacks')
@@ -156,13 +163,17 @@ if myanswer == 'yes':
                     print('your journey has come to an end')
                     quit()
             elif myact == 'heal':
-                currentplayerhp += 15
-                print('the medium flame attacks')
-                currentplayerhp -= 6
-                print('your hp ' + str(currentplayerhp))
-                if currentplayerhp < 0:
-                    print('your journey has come to an end')
-                    quit()
+                if currentplayerhp >= playerhp[level_2]:
+                    print('your already at max hp')
+                    return
+                else:
+                    currentplayerhp += 15
+                    print('the flame warden retaliates with an attack.')
+                    currentplayerhp -= 8
+                    print('your hp ' + str(currentplayerhp))
+                    if currentplayerhp < 0:
+                        print('alas you have died by the flame')
+                        quit()
             elif myact == 'run':
                 print('you escape for a brief moment.')
                 print('would you like to heal?')
@@ -205,12 +216,17 @@ if myanswer == 'yes':
                         print('your journey has come to an end')
                         quit()
                 elif myact == 'heal':
-                    currentplayerhp += 15
-                    currentplayerhp -= 7
-                    print('Your Hp ' + str(currentplayerhp))
-                    if currentplayerhp < 0:
-                        print('your journey has come to an end')
-                        quit()
+                    if currentplayerhp >= playerhp[level_3]:
+                        print('your already at max hp')
+                        return
+                    else:
+                        currentplayerhp += 10
+                        print('the flame warden retaliates with an attack.')
+                        currentplayerhp -= 8
+                        print('your hp ' + str(currentplayerhp))
+                        if currentplayerhp < 0:
+                            print('alas you have died by the flame')
+                            quit()
                 elif myact == "run":
                     print('You escape from the Major flame.')
                     print('would you like to heal?')
@@ -228,6 +244,10 @@ if myanswer == 'yes':
                     if currentplayerhp < 0:
                         print('your journey has come to an end')
                         quit()
+    else:
+        print('Your journey has come to an end thanks for playing'
+        'now deleting all progress.')
+        quit()
     print('You have gained a level your healing has increased '
           'from 15 to 20')
     currentplayerhp = playerhp['level_4']
@@ -244,6 +264,9 @@ if myanswer == 'yes':
                 print('The left or right major flame')
                 mymove = input()
                 if mymove == 'right major flame':
+                    if currentflamehp <= 0:
+                        print('The right major flame is dead attack the other'
+                        'one')
                     currentflamehp -= 35
                     print('Rmajor flame ' + str(currentflamehp))
                     currentplayerhp -= 14
@@ -252,6 +275,10 @@ if myanswer == 'yes':
                         print('your journey has come to an end')
                         quit()
                 elif mymove == 'left major flame':
+                    if currentflamehp1 <= 0:
+                        print('The left major flame is dead attack the other'
+                        'one jeez')
+                        return
                     currentflamehp1 -= 35
                     print('Lmajor flame ' + str(currentflamehp1))
                     currentplayerhp -= 14
@@ -263,12 +290,17 @@ if myanswer == 'yes':
                     print('you got to choose between \'left major flame\''
                           ' or \'right major flame\'')
             elif myact == 'heal':
-                currentplayerhp += 20
-                currentplayerhp -= 14
-                print('Your hp ' + str(currentplayerhp))
-                if currentplayerhp < 0:
-                    print('your journey has come to an end')
-                    quit()
+                if currentplayerhp >= playerhp[level_4]:
+                    print('your already at max hp')
+                    return
+                else:
+                    currentplayerhp += 20
+                    print('the flame warden retaliates with an attack.')
+                    currentplayerhp -= 8
+                    print('your hp ' + str(currentplayerhp))
+                    if currentplayerhp < 0:
+                        print('alas you have died by the flame')
+                        quit()
             elif myact == 'run':
                 print('you escape the major flames')
                 print('would you like to heal?')
@@ -285,3 +317,14 @@ if myanswer == 'yes':
                 if currentplayerhp < 0:
                     print('your journey has come to an end')
                     quit()
+    print('You have gained a level you are now level 5 and can heal for 25'
+    'points, and deal 40 dmg')
+    currentplayerhp = playerhp[level_5]
+    print('will you continue down the hallway?')
+    myanswer = input()
+    if myanswer = "yes":
+        print('you come across a fire walker it seems like it hasn\'t noticed you')
+        currentflamehp = beastiary[fire_walker]
+        print('will you attack it and deal 2x dmg? Or will you sneak by it?')
+        myanswer = input()
+        if myanswer == 'attack':
