@@ -328,3 +328,117 @@ if myanswer == 'yes':
         print('will you attack it and deal 2x dmg? Or will you sneak by it?')
         myanswer = input()
         if myanswer == 'attack':
+            currentflamehp -= 80
+            print(currentflamehp)
+            while currentflamehp > 0:
+                print('you can fight, run, or heal what shall you do')
+                myact = input()
+                if myact == 'fight':
+                    currentflamehp -= 40
+                    print('Fire walker hp' + str(currentflamehp) + 'it attacks.')
+                    currentplayerhp -= 8
+                    print('Your hp' + str(currentplayerhp))
+                elif myact == 'heal':
+                    if currentplayerhp >= playerhp[level_4]:
+                        print('your already at max hp')
+                        return
+                    else:
+                        currentplayerhp += 25
+                        print('the flame warden retaliates with an attack.')
+                        currentplayerhp -= 8
+                        print('your hp ' + str(currentplayerhp))
+                        if currentplayerhp < 0:
+                            print('alas you have died by the flame')
+                            quit()
+                elif myact == 'run':
+                    print('you escape the fire walker.')
+                    print('would you like to heal?')
+                    myanswer =input()
+                    if myanswer == 'yes':
+                        currentplayerhp += 25
+                        print('Your hp ' + str(currentplayerhp))
+                        print('The fire walker pursues.')
+                    else:
+                        print('The fire walker pursues.')
+                else:
+                    currentplayerhp -= 8
+                    print('Your hp ' + str(currentplayerhp))
+                    if currentplayerhp < 0:
+                        print('your journey has come to an end')
+                        quit()
+        elif myanswer == 'sneak':
+            print('you sneak by the fire walker.')
+            print('or so you thought too bad your not a ninja.')
+            while currentflamehp > 0:
+                print('you can fight, run, or heal what shall you do')
+                myact = input()
+                if myact == 'fight':
+                    currentflamehp -= 40
+                    print('Fire walker hp' + str(currentflamehp) + 'it attacks.')
+                    currentplayerhp -= 8
+                    print('Your hp' + str(currentplayerhp))
+                elif myact == 'heal':
+                    if currentplayerhp >= playerhp[level_4]:
+                        print('your already at max hp')
+                        return
+                    else:
+                        currentplayerhp += 25
+                        print('the flame warden retaliates with an attack.')
+                        currentplayerhp -= 8
+                        print('your hp ' + str(currentplayerhp))
+                        if currentplayerhp < 0:
+                            print('alas you have died by the flame')
+                            quit()
+                elif myact == 'run':
+                    print('you escape the fire walker.')
+                    print('would you like to heal?')
+                    myanswer =input()
+                    if myanswer == 'yes':
+                        currentplayerhp += 25
+                        print('Your hp ' + str(currentplayerhp))
+                        print('The fire walker pursues.')
+                    else:
+                        print('The fire walker pursues.')
+                else:
+                    currentplayerhp -= 8
+                    print('Your hp ' + str(currentplayerhp))
+                    if currentplayerhp < 0:
+                        print('your journey has come to an end')
+                        quit()
+        else:
+            while currentflamehp > 0:
+                print('you can fight, run, or heal what shall you do')
+                myact = input()
+                if myact == 'fight':
+                    currentflamehp -= 40
+                    print('Fire walker hp' + str(currentflamehp) + 'it attacks.')
+                    currentplayerhp -= 8
+                    print('Your hp' + str(currentplayerhp))
+                elif myact == 'heal':
+                    if currentplayerhp >= playerhp[level_4]:
+                        print('your already at max hp')
+                        return
+                    else:
+                        currentplayerhp += 25
+                        print('the flame warden retaliates with an attack.')
+                        currentplayerhp -= 8
+                        print('your hp ' + str(currentplayerhp))
+                        if currentplayerhp < 0:
+                            print('alas you have died by the flame')
+                            quit()
+                elif myact == 'run':
+                    print('you escape the fire walker.')
+                    print('would you like to heal?')
+                    myanswer =input()
+                    if myanswer == 'yes':
+                        currentplayerhp += 25
+                        print('Your hp ' + str(currentplayerhp))
+                        print('The fire walker pursues.')
+                    else:
+                        print('The fire walker pursues.')
+                else:
+                    currentplayerhp -= 8
+                    print('Your hp ' + str(currentplayerhp))
+                    if currentplayerhp < 0:
+                        print('your journey has come to an end')
+                        quit()
