@@ -1,4 +1,4 @@
- from random import randint
+from random import randint
 
 
 playerhp = {'level_1': 100, 'level_2': 110, 'level_3': 120, 'level_4': 130,
@@ -39,6 +39,16 @@ def heal_action (level):
     total_heal = randint(base_heal, (heal_per_level * level) + base_heal)
 
     return total_heal
+
+
+def HP_barrier (level):
+    base_barrier = 200
+    barrier_per_level = 50
+
+    total_barrier = randint(base_barrier, (barrier_per_level * level) + base_barrier)
+
+    return total_barrier
+
 
 print('hello your about to enter a world of burning or a building that\'s on '
       'fire')
@@ -323,17 +333,20 @@ if myanswer == 'yes':
         print('you run into a group of major flames')
         currentflamehp = beastiary['major_flame']
         currentflamehp1 = beastiary['major_flame']
-        while (currentflamehp, currentflamehp1) > 0:
+        while (currentflamehp + currentflamehp1) > 0:
+            print('you can fight, run or heal.')
             myact = input()
             if myact == 'fight':
                 print('The left or right major flame')
                 mymove = input()
-                if mymove == 'right major flame':
+                if mymove == 'right':
                     if currentflamehp <= 0:
                         print('The right major flame is dead attack the other'
                               ' one')
                     battle_action(4)
                     currentflamehp -= battle_action(4)
+                    if currentflamehp < 0:
+                        currentflamehp = 0
                     print('major flame hp ' + str(currentflamehp))
                     monster_attack(3)
                     currentplayerhp -= monster_attack(3)
@@ -343,12 +356,14 @@ if myanswer == 'yes':
                     if currentplayerhp < 0:
                         print('your journey has come to an end')
                         quit()
-                elif mymove == 'left major flame':
+                elif mymove == 'left':
                     if currentflamehp1 <= 0:
                         print('The left major flame is dead attack the other '
                               'one jeez')
                     battle_action(4)
                     currentflamehp1 -= battle_action(4)
+                    if currentflamehp1 < 0:
+                        currentflamehp1 = 0
                     print('Lmajor flame ' + str(currentflamehp1))
                     monster_attack(3)
                     currentplayerhp -= monster_attack(3)
@@ -359,8 +374,8 @@ if myanswer == 'yes':
                         print('your journey has come to an end')
                         quit()
                 else:
-                    print('you got to choose between \'left major flame\''
-                          ' or \'right major flame\'')
+                    print('you got to choose between \'left\' major flame'
+                          ' or \'right\' major flame)
             elif myact == 'heal':
                 if currentplayerhp >= playerhp['level_4']:
                     print('your already at max hp')
@@ -396,7 +411,7 @@ if myanswer == 'yes':
                 if currentplayerhp < 0:
                     print('your journey has come to an end')
                     quit()
-    elif myanswer == 'left'
+    elif myanswer == 'left':
         print('you come to the entrance into the furnace.')
         print('you feel immense heat coming from beyond the door.')
         print('will you go in or turn back?')
@@ -419,6 +434,9 @@ if myanswer == 'yes':
                                                               'damages you')
                     currentplayerhp -= 5
                     print('your Hp ' + str(currentplayerhp))
+                    if currentplayerhp <= 0:
+                        print('you have died leaving nothing but ash behind')
+                        quit()
                 elif myact == 'heal':
                     heal_action(4)
                     currentplayerhp += heal_action(4)
@@ -426,6 +444,20 @@ if myanswer == 'yes':
                     currentplayerhp -= monster_attack(20)
                     currentplayerhp -= 5
                     print('Your HP ' + str(currentplayerhp))
+                    if currentplayerhp <= 0:
+                        print('you have failed to live only fire remains')
+                        quit()
+                else:
+                    print('you can fight or heal only')
+            if currentflamehp <= 0:
+                print('you have defeated the Inferno warden but at the cost'
+                ' of your sword unable to continue you head back only to be'
+                ' consumed by the flame.')
+                quit()
+        else:
+            print('you turn back and leave the last thing you hear is'
+            ' <loud ringing noise>')
+            quit()
     print('You have gained a level you are now level 5 and can heal for 25 '
           'points, and deal 40 dmg')
     currentplayerhp = playerhp['level_5']
@@ -447,8 +479,8 @@ if myanswer == 'yes':
                 if myact == 'fight':
                     battle_action(5)
                     currentflamehp -= battle_action(5)
-                    print('Fire walker hp' + str(currentflamehp) +
-                          'it attacks.')
+                    print('Fire walker hp ' + str(currentflamehp) +
+                          ' it attacks.')
                     monster_attack(4)
                     currentplayerhp -= monster_attack(4)
                     print('Your hp' + str(currentplayerhp))
@@ -572,4 +604,66 @@ if myanswer == 'yes':
                         quit()
 
     print('with the fire walker defeated you have gained a level you are now '
-          'level')
+          'level 6 you have learned the barrier spell')
+    print('will you continue down the path?')
+    myanswer = input()
+    if myanswer == 'yes':
+        print('you go down the hall only to be met by a Flame warden it rushes'
+        ' you, the battle comenses')
+        barrier = 0
+        currentflamehp = beastiary['flame_warden']
+        while currentflamehp > 0:
+            print('you can fight, run, barrier, or heal what shall you do')
+            myact = input()
+            if myact == 'fight':
+                battle_action(6)
+                currentflamehp -= battle_action(6)
+                print('Flame warden hp' + str(currentflamehp) +
+                      'it attacks.')
+                monster_attack(5)
+                currentplayerhp -= monster_attack(5)
+                print('Your hp' + str(currentplayerhp))
+            elif myact == 'heal':
+                if currentplayerhp >= playerhp['level_4']:
+                    print('your already at max hp')
+                else:
+                    heal_action(5)
+                    currentplayerhp += heal_action(5)
+                    print('the flame warden retaliates with an attack.')
+                    monster_attack(5)
+                    currentplayerhp -= monster_attack(5)
+                    print('your hp ' + str(currentplayerhp))
+                    if currentplayerhp < 0:
+                        print('alas you have died by the flame')
+                        quit()
+            elif myact == 'run':
+                print('you escape the flame warden.')
+                print('would you like to heal?')
+                myanswer =input()
+                if myanswer == 'yes':
+                    heal_action(5)
+                    currentplayerhp += heal_action(5)
+                    print('Your hp ' + str(currentplayerhp))
+                    print('The flame warden pursues.')
+            elif myact == 'barrier':
+                if barrier == 1:
+                    print('you\'ve used the max number of barriers.')
+                    continue
+                else:
+                    print('you have shielded your hp')
+                    HP_barrier(1)
+                    currentplayerhp += HP_barrier(1)
+                    print('your hp ' + str(currentplayerhp))
+                    print('The flame warden attacks in retaliation')
+                    monster_attack(5)
+                    currentplayerhp -= monster_attack(5)
+                    barrier += 1
+                    print('your hp ' + str(currentplayerhp))
+            else:
+                print('you must have enter the wrong input try fight, run,'
+                ' barrier, heal.')
+    print('you have defeated the flame warden gaining a level you\'re now '
+    'level 7 increasing your healing and barrier.')
+    currentplayerhp = playerhp['level_7']
+    print('the hall comes to a door here will you go through?')
+    myanswer = input()
