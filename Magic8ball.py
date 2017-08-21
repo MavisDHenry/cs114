@@ -15,7 +15,7 @@ else:
 print('what is your question?')
 myquestion = input()
 print(str(myquestion) + ' is that all you want to ask? no? well to bad one'
-' question at a time.')
+      ' question at a time.')
 eight_ball = randint(1 , int(myage) * int(len(myname)))
 if eight_ball < 5:
     print('Awww you just a sweet little baby arn\'t you?')

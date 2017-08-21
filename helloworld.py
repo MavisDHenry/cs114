@@ -375,7 +375,7 @@ if myanswer == 'yes':
                         quit()
                 else:
                     print('you got to choose between \'left\' major flame'
-                          ' or \'right\' major flame)
+                          ' or \'right\' major flame')
             elif myact == 'heal':
                 if currentplayerhp >= playerhp['level_4']:
                     print('your already at max hp')
