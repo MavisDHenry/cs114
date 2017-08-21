@@ -1,5 +1,5 @@
-from Fire_world_main.actions import Actions
-from Fire_world_main.player import Player
+from Flame_world.Fire_world_main.actions import Actions
+from Flame_world.Fire_world_main.player import Player
 
 actions = Actions()
 player = Player()

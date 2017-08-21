@@ -1,5 +1,5 @@
 from random import random
-from Fire_world_main import constants
+from Flame_world.Fire_world_main import constants
 
 
 class AttackWeapon(object):
