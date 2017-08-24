@@ -6,6 +6,7 @@ from Flame_world.Fire_world_main.interact import player_print
 
 from Flame_world.Fire_world_main.monsters import flame
 from Flame_world.Fire_world_main.monsters import flamewarden
+from Flame_world.Fire_world_main.monsters import mediumflame
 
 from Flame_world.Fire_world_main.player import Player
 
@@ -34,6 +35,10 @@ class ActionsMonsters(GameActions):
         self.flame_warden.set_game_loop(self._game_loop)
         self.flame_warden.start_fight(player)
 
+    def do_fight_medium_flame(self, player: Player)-> None:
+        self.medium_flame.set_game_loop(self._game_loop)
+        self.medium_flame.start_fight(player)
+
 
 class ActionsMovements(GameActions):
     def __init__(self):
@@ -58,9 +63,21 @@ class ActionsMovements(GameActions):
 
     def do_game_flame_fork_left(self, player: Player) -> None:
         player_print(statements.fire_fork_left_statement)
-        level = player.level_cur()
-        level_f = "You reached level {0}. The game is done for now"
-        exit_game(level_f.format(level))
+        pa = get_player_input(statements.fire_fork_left_question,
+                              statements.fire_fork_left_answers)
+        if pa.lower == 'yes':
+            self._game_loop('medium_flame', player)
+        else:
+            exit_game(statements.fire_fork_left_answers_no)
+
+    def do_game_hallway_continue(self, player: Player)-> None:
+        player_print(statements.hallway_continue_statement)
+        pa = get_player_input(statements.hallway_continue_question,
+                              statements.hallway_continue_answers)
+        if pa.lower() == 'yes':
+            self._game_loop('major_flame', player)
+        else:
+            exit_game(statements.hallway_continue_answers_no)
 
     def do_game_flame_fork_right(self, player: Player) -> None:
         player_print(statements.fire_fork_right_statement)

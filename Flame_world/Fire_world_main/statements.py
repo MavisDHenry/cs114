@@ -33,3 +33,13 @@ fire_fork_left_return = 'You return to the fork in the road and go left.'
 
 # Left side of fire fork - hallway
 fire_fork_left_statement = 'You see a hallway'
+fire_fork_left_question = 'Would you like to continue?'
+fire_fork_left_answers = ["yes", 'no']
+fire_fork_left_answers_no = 'the flame closes in on you, you turn to ash.'
+
+# Hallway continue
+hallway_continue_statement = 'You see a long hallway'
+hallway_continue_question = 'Would you like to continue?'
+hallway_continue_answers = ['yes', 'no']
+hallway_continue_answers_no = 'You bow to the major flame only to be ' \
+                              'struck down by it.'
