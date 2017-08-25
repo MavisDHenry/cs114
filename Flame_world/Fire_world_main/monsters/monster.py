@@ -91,6 +91,6 @@ class Monster(object):
     def set_game_loop(self, game_loop: Callable) -> None:
         self._game_loop = game_loop
 
-    def start_fight(self, player: Player) -> None:
+    def start_fight(self, player: object) -> object:
         self._set_health(player)
         self._do_attack(player)

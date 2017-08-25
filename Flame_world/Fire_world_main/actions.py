@@ -5,8 +5,11 @@ from Flame_world.Fire_world_main.interact import get_player_input
 from Flame_world.Fire_world_main.interact import player_print
 
 from Flame_world.Fire_world_main.monsters import flame
-from Flame_world.Fire_world_main.monsters import flamewarden
 from Flame_world.Fire_world_main.monsters import mediumflame
+from Flame_world.Fire_world_main.monsters import majorflame
+from Flame_world.Fire_world_main.monsters import firewalker
+from Flame_world.Fire_world_main.monsters import flamewarden
+
 
 from Flame_world.Fire_world_main.player import Player
 
@@ -26,18 +29,30 @@ class ActionsMonsters(GameActions):
         GameActions.__init__(self)
         self.flame = flame.Flame()
         self.flame_warden = flamewarden.FlameWarden()
+        self.medium_flame = mediumflame.MediumFlame()
+        self.major_flame = majorflame.MajorFlame()
+        self.fire_walker = firewalker.FireWalker()
 
     def do_fight_flame(self, player: Player) -> None:
         self.flame.set_game_loop(self._game_loop)
         self.flame.start_fight(player)
 
+    def do_fight_medium_flame(self, player: Player)-> None:
+        self.medium_flame.set_game_loop(self._game_loop)
+        self.medium_flame.start_fight(player)
+
+    def do_fight_major_flame(self, player: Player)-> None:
+        self.major_flame.set_game_loop(self._game_loop)
+        self.major_flame.start_fight(player)
+
+    def do_fight_fire_walker(self, player: Player)-> None:
+        self.fire_walker.set_game_loop(self._game_loop)
+        self.fire_walker.start_fight(player)
+
     def do_fight_flame_warden(self, player: Player) -> None:
         self.flame_warden.set_game_loop(self._game_loop)
         self.flame_warden.start_fight(player)
 
-    def do_fight_medium_flame(self, player: Player)-> None:
-        self.medium_flame.set_game_loop(self._game_loop)
-        self.medium_flame.start_fight(player)
 
 
 class ActionsMovements(GameActions):
@@ -65,7 +80,7 @@ class ActionsMovements(GameActions):
         player_print(statements.fire_fork_left_statement)
         pa = get_player_input(statements.fire_fork_left_question,
                               statements.fire_fork_left_answers)
-        if pa.lower == 'yes':
+        if pa.lower() == 'yes':
             self._game_loop('medium_flame', player)
         else:
             exit_game(statements.fire_fork_left_answers_no)
@@ -78,6 +93,15 @@ class ActionsMovements(GameActions):
             self._game_loop('major_flame', player)
         else:
             exit_game(statements.hallway_continue_answers_no)
+
+    def do_game_hallway02(self, player: Player)-> None:
+        player_print(statements.hallway02_statement)
+        pa = get_player_input(statements.hallway02_question,
+                              statements.hallway02_answer)
+        if pa.lower() == 'yes':
+            self._game_loop('fire_walker', player)
+        else:
+            exit_game(statements.hallway02_answer_no)
 
     def do_game_flame_fork_right(self, player: Player) -> None:
         player_print(statements.fire_fork_right_statement)
@@ -120,6 +144,12 @@ class Actions(object):
             self._movements.do_game_flame_fork_right
         self._map['fire_fork_left_return'] = \
             self._movements.do_game_flame_fork_return
+        self._map['medium_flame'] = self._monsters.do_fight_medium_flame
+        self._map['hallway_continue'] = \
+            self._movements.do_game_hallway_continue
+        self._map['major_flame'] = self._monsters.do_fight_major_flame
+        self._map['hallway02'] = self._movements.do_game_hallway02
+        self._map['fire_walker'] = self._monsters.do_fight_fire_walker
         self._map['flame_warden'] = self._monsters.do_fight_flame_warden
 
     def do_action(self, action: str, player: Player) -> None:
