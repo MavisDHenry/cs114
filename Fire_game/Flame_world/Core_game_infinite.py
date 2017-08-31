@@ -1,5 +1,5 @@
-from Flame_world.Fire_world_infinite.actions import Actions
-from Flame_world.Fire_world_infinite.player import Player
+from Fire_game.Flame_world.Fire_world_infinite.actions import Actions
+from Fire_game.Flame_world.Fire_world_infinite.player import Player
 
 actions = Actions()
 player = Player()

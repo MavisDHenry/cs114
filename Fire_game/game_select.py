@@ -1,5 +1,5 @@
-from Flame_world.core_game_infinite import core_game_infinite
-from Flame_world.core_game import core_game
+from Fire_game.Flame_world.core_game_infinite import core_game_infinite
+from Fire_game.Flame_world.core_game import core_game
 
 
 print('what game mode would you like to play?')

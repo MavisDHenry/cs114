@@ -1,4 +1,4 @@
-from Flame_world.Fire_world_main.monsters import monster
+from Fire_game.Flame_world.Fire_world_main.monsters import monster
 
 
 class MajorFlame(monster.Monster):
