@@ -1,5 +1,5 @@
-from Fire_game.Flame_world.Fire_world_infinite import constants
-from Fire_game.Flame_world.Fire_world_infinite.interact import player_print
+from Fire_world_infinite import constants
+from Fire_world_infinite.interact import player_print
 
 
 class Player(object):

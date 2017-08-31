@@ -1,10 +1,10 @@
 from random import randint
-from Fire_game.Flame_world.Fire_world_main import constants
-from Fire_game.Flame_world.Fire_world_main import statements
-from Fire_game.Flame_world.Fire_world_main.interact import exit_game
-from Fire_game.Flame_world.Fire_world_main.interact import get_player_input
-from Fire_game.Flame_world.Fire_world_main.interact import player_print
-from Fire_game.Flame_world.Fire_world_main.player import Player
+from Fire_world_main import constants
+from Fire_world_main import statements
+from Fire_world_main.interact import exit_game
+from Fire_world_main.interact import get_player_input
+from Fire_world_main.interact import player_print
+from Fire_world_main.player import Player
 from typing import Callable
 
 

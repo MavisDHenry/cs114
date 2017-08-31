@@ -1,17 +1,17 @@
-from Fire_game.Flame_world.Fire_world_infinite import statements
+from Fire_world_infinite import statements
 
-from Fire_game.Flame_world.Fire_world_infinite.interact import exit_game
-from Fire_game.Flame_world.Fire_world_infinite.interact import get_player_input
-from Fire_game.Flame_world.Fire_world_infinite.interact import player_print
+from Fire_world_infinite.interact import exit_game
+from Fire_world_infinite.interact import get_player_input
+from Fire_world_infinite.interact import player_print
 
-from Fire_game.Flame_world.Fire_world_infinite.monsters import flame
-from Fire_game.Flame_world.Fire_world_infinite.monsters import mediumflame
-from Fire_game.Flame_world.Fire_world_infinite.monsters import majorflame
-from Fire_game.Flame_world.Fire_world_infinite.monsters import firewalker
-from Fire_game.Flame_world.Fire_world_infinite.monsters import flamewarden
+from Fire_world_infinite.monsters import flame
+from Fire_world_infinite.monsters import mediumflame
+from Fire_world_infinite.monsters import majorflame
+from Fire_world_infinite.monsters import firewalker
+from Fire_world_infinite.monsters import flamewarden
 
 
-from Flame_world.Fire_world_infinite.player import Player
+from Fire_world_infinite.player import Player
 
 from typing import Callable
 

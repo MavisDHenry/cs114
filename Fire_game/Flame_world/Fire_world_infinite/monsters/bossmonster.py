@@ -1,8 +1,8 @@
 from random import randint
-from Fire_game.Flame_world.Fire_world_infinite import constants
-from Fire_game.Flame_world.Fire_world_infinite.interact import player_print
-from Fire_game.Flame_world.Fire_world_infinite.monsters import monster
-from Fire_game.Flame_world.Fire_world_infinite.player import Player
+from Fire_world_infinite import constants
+from Fire_world_infinite.interact import player_print
+from Fire_world_infinite.monsters import monster
+from Fire_world_infinite.player import Player
 
 
 class BossMonster(monster.Monster):
