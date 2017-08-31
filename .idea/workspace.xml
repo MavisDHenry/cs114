@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf27d66a-4a26-4360-a1a9-0304e858f19a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/firewalker.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/majorflame.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flame_world/Fire_world_main/actions.py" afterPath="$PROJECT_DIR$/Flame_world/Fire_world_main/actions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py" afterPath="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flame_world/Fire_world_main/statements.py" afterPath="$PROJECT_DIR$/Flame_world/Fire_world_main/statements.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Flame_world/Fire_world_main/player.py" afterPath="$PROJECT_DIR$/Flame_world/Fire_world_main/player.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="actions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="actions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/actions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="971">
-              <caret line="151" column="70" lean-forward="false" selection-start-line="151" selection-start-column="70" selection-end-line="151" selection-end-column="70" />
+            <state relative-caret-position="931">
+              <caret line="152" column="68" lean-forward="false" selection-start-line="152" selection-start-column="68" selection-end-line="152" selection-end-column="68" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -31,21 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mediumflame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/mediumflame.py">
+      <file leaf-file-name="monster.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="majorflame.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/majorflame.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+            <state relative-caret-position="969">
+              <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -61,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firewalker.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/firewalker.py">
+      <file leaf-file-name="interact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/interact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+            <state relative-caret-position="680">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -96,15 +93,15 @@
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/flame.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/flamewarden.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/attacks.py" />
-        <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/player.py" />
         <option value="$PROJECT_DIR$/helloworld.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/interact.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/mediumflame.py" />
-        <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/majorflame.py" />
-        <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/firewalker.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/statements.py" />
+        <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/firewalker.py" />
         <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/actions.py" />
+        <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/player.py" />
+        <option value="$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py" />
       </list>
     </option>
   </component>
@@ -629,7 +626,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503606263069</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fire Walker">
+      <created>1503625957840</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1503625957840</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -643,12 +647,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20561497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33395723" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4208556" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33835006" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3838901" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -725,7 +728,8 @@
     <MESSAGE value="Reconstruction" />
     <MESSAGE value="Reconstruction the new way" />
     <MESSAGE value="Medium flame" />
-    <option name="LAST_COMMIT_MESSAGE" value="Medium flame" />
+    <MESSAGE value="Fire Walker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fire Walker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -938,38 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/attacks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/interact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/player.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/flame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -994,26 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1331">
-          <caret line="93" column="39" lean-forward="true" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/majorflame.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/firewalker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -1034,13 +990,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/firewalker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/interact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/attacks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/actions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="971">
-          <caret line="151" column="70" lean-forward="false" selection-start-line="151" selection-start-column="70" selection-end-line="151" selection-end-column="70" />
+        <state relative-caret-position="931">
+          <caret line="152" column="68" lean-forward="false" selection-start-line="152" selection-start-column="68" selection-end-line="152" selection-end-column="68" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flame_world/Fire_world_main/monsters/monster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

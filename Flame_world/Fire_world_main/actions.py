@@ -150,6 +150,7 @@ class Actions(object):
         self._map['major_flame'] = self._monsters.do_fight_major_flame
         self._map['hallway02'] = self._movements.do_game_hallway02
         self._map['fire_walker'] = self._monsters.do_fight_fire_walker
+        self._map['flame_fork'] = self._movements.do_game_flame_fork
         self._map['flame_warden'] = self._monsters.do_fight_flame_warden
 
     def do_action(self, action: str, player: Player) -> None:

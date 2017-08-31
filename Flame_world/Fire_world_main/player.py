@@ -29,9 +29,12 @@ class Player(object):
         self._check_death()
 
     def heal(self) -> None:
-        h_diff = self._max_health - self._cur_health
-        h_add = int(h_diff / 2)
-        self._cur_health += h_add
+        if self._cur_health > 0:
+            h_diff = self._max_health - self._cur_health
+            h_add = int(h_diff / 2)
+            self._cur_health += h_add
+        else:
+            self._check_death()
 
     def is_dead(self) -> bool:
         return self._is_dead
