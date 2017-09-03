@@ -2,37 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf27d66a-4a26-4360-a1a9-0304e858f19a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/interact.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/constants.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/interact.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/__init__.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/__init__.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/statements.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/__init__.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/statements.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/interact.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/interact.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Core_game.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Core_game.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Core_game_infinite.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Core_game_infinite.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/actions.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/actions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/bossmonster.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/bossmonster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/firewalker.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/firewalker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/flame.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/flame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/flamewarden.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/flamewarden.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/majorflame.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/majorflame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/mediumflame.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/mediumflame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/monster.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/monsters/monster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/player.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/player.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/actions.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/actions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/bossmonster.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/bossmonster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/firewalker.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/firewalker.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/flame.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/flame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/flamewarden.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/flamewarden.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/majorflame.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/majorflame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/mediumflame.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/mediumflame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/monster.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/monsters/monster.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/player.py" afterPath="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/player.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Fire_game/game_select.py" afterPath="$PROJECT_DIR$/Fire_game/game_select.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +18,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="statements.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="statements.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/statements.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="984">
               <caret line="50" column="72" lean-forward="false" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game_select.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fire_game/game_select.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="actions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/actions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -69,6 +65,56 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_The game renewed.zip/Flame_world/Fire_world_main/interact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="interact.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/interact.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="984">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_The game renewed.zip/Flame_world/Fire_world_main/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,6 +177,10 @@
         <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/player.py" />
         <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/statements.py" />
         <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/statements.py" />
+        <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/interact.py" />
+        <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/interact.py" />
+        <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/constants.py" />
+        <option value="$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/constants.py" />
       </list>
     </option>
   </component>
@@ -823,7 +873,14 @@
       <option name="project" value="LOCAL" />
       <updated>1504397380000</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Changes">
+      <created>1504398539771</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1504398539771</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -927,48 +984,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Deadlysnowflakes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Deadlysnowflakes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Deadlysnowflakes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Volume_Converter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/changereturn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1178,24 +1193,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Fire_game/game_select.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/actions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_The game renewed.zip/Flame_world/Fire_world_main/statements.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1216,6 +1213,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="984">
           <caret line="50" column="72" lean-forward="false" selection-start-line="50" selection-start-column="72" selection-end-line="50" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fire_game/game_select.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/interact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/interact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="984">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_The game renewed.zip/Flame_world/Fire_world_main/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_The game renewed.zip/Flame_world/Fire_world_main/interact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_infinite/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fire_game/Flame_world/Fire_world_main/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
