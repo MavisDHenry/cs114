@@ -49,4 +49,3 @@ hallway02_statement = 'The hallway stretches you see a fire shaped like a man'
 hallway02_question = 'Will you approach the fire'
 hallway02_answer = ['yes', 'no']
 hallway02_answer_no = 'The man shaped fire shoots you, you are now ash.'
-

@@ -1,4 +1,4 @@
-from Flame_world.Fire_world_infinite.monsters import bossmonster
+from Fire_game.Flame_world.Fire_world_infinite.monsters import bossmonster
 
 
 class FlameWarden(bossmonster.BossMonster):
