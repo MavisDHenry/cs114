@@ -1,10 +1,10 @@
-from Fire_game.Flame_world.core_game_infinite import core_game_infinite
-from Fire_game.Flame_world.core_game import core_game
+from Flame_world import Core_game
+from Flame_world import Core_game_infinite
 
 
 print('what game mode would you like to play?')
-game=input('infinite or story')
-if game == infinite:
-    core_game_infinite
+game = input('infinite or story. ')
+if game == 'infinite':
+    Core_game_infinite.main()
 else:
-    core_game
+    Core_game.main()
