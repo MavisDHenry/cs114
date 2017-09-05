@@ -1,14 +1,17 @@
 from Fire_game.Flame_world.Fire_world_main.actions import Actions
 from Fire_game.Flame_world.Fire_world_main.player import Player
-
+import copy
 actions = Actions()
 player = Player()
 
 
 def game_loop(stage: str, player_obj: Player):
     global actions
+    global player
 
-    actions.do_action(stage, player_obj)
+    player = copy.deepcopy(player_obj)
+
+    actions.do_action(stage, player)
 
 
 def env_setup():
