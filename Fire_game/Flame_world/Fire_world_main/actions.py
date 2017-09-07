@@ -167,6 +167,13 @@ class ActionsMovements(GameActions):
         else:
             self._game_loop('fight_flame_monster', player)
 
+    def do_game_exit_door(self, player: Player) -> None:
+        player_print(statements.exit_door_statement)
+        pa = get_player_input(statements.exit_door_question,
+                             statements.exit_door_answers)
+        if pa.lower() == 'yes':
+            self.
+
 
 class Actions(object):
     def __init__(self) -> None:
