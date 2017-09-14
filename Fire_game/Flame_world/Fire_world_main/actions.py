@@ -35,7 +35,7 @@ class ActionsMonsters(GameActions):
         self.major_flame = majorflame.MajorFlame()
         self.fire_walker = firewalker.FireWalker()
         self.fire_warden = fire_warden.FireWarden()
-        self.fire_warrior = fire_warrior.FireWarrior()
+        self.fire_warrior = firewarrior.FireWarrior()
 
     def do_fight_flame(self, player: Player) -> None:
         self.flame.set_game_loop(self._game_loop)
@@ -171,8 +171,18 @@ class ActionsMovements(GameActions):
         player_print(statements.exit_door_statement)
         pa = get_player_input(statements.exit_door_question,
                              statements.exit_door_answers)
-        if pa.lower() == 'yes':
-            self.
+        if pa.lower() == 'no':
+            exit_game(statement.exit_door_answers_no)
+        else:
+            self.game_loop('pre_fight_inferno', player)
+    def pre_fight_inferno(self, player: Player) -> None:
+        player_print(statements.pre_inferno_statement)
+        pa = get_player_input(statements.pre_inferno_question,
+                              statements.pre_inferno_answers)
+        if pa.lower() == 'no':
+            exit_game(statements.pre_inferno_answers_no)
+        else:
+            self.set_game_loop('fight_inferno_series')
 
 
 class Actions(object):
