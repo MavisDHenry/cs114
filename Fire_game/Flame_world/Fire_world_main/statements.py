@@ -49,3 +49,40 @@ hallway02_statement = 'The hallway stretches you see a fire shaped like a man'
 hallway02_question = 'Will you approach the fire'
 hallway02_answer = ['yes', 'no']
 hallway02_answer_no = 'The man shaped fire shoots you, you are now ash.'
+# exit door
+exit_door_statement = 'you see a door with an exit sign'
+exit_door_question = 'will you go through the door?'
+exit_door_answers = 'yes or no'
+exit_door_answers_no = 'you give up at the door accepting death'
+# pre_inferno
+pre_inferno_statement = 'You are a monster to this society, you have' \
+                        ' slaughtered the children and teachers' \
+                        ' of this school' \
+                        'we can not allow you to live and' \
+                        ' cause further harm.' \
+                        'Your only hope at redemption' \
+                        ' is surrender and maybe we' \
+                        'will let you live. This is our ' \
+                        'final judgment and offer' \
+                        'do you accept defeat or not?'
+pre_inferno_question = 'Will you surrender or will you fight?'
+pre_inferno_answers = 'Surrender or fight?'
+pre_inferno_answers_surrender = 'you go quietly accepting your punishment' \
+                                ' you regret murdering those people as you' \
+                                ' drop to your knees to plead forgiveness,' \
+                                ' you are stuck down by an Inferno Warden.'
+# end game surrender
+end_game_surrender_statments = 'That\'s what happens ' \
+                               'when you murder an entire ' \
+                               'school full of children and teachers' \
+                               'although it\'s not like you had much ' \
+                               'of a choice maybe try killing everyone' \
+                               'after all your just a monster.'
+# end game fight
+end_game_fight_statement = 'Wow you actually did it ' \
+                           'you are now a true monster,' \
+                           'looks like you will have to try killing the rest' \
+                           ' of the FLame World but don\'t worry you can do' \
+                           ' it I believe in you. So just kill them,' \
+                           ' kill them, kill them, kill them, kill them all!' \
+                           'HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHa!!!'

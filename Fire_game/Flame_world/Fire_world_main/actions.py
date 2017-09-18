@@ -11,6 +11,9 @@ from Fire_game.Flame_world.Fire_world_main.monsters import firewalker
 from Fire_game.Flame_world.Fire_world_main.monsters import flamewarden
 from Fire_game.Flame_world.Fire_world_main.monsters import fire_warden
 from Fire_game.Flame_world.Fire_world_main.monsters import firewarrior
+from Fire_game.Flame_world.Fire_world_main.monsters import inferno_walker
+from Fire_game.Flame_world.Fire_world_main.monsters import inferno_warrior
+from Fire_game.Flame_world.Fire_world_main.monsters import inferno_warden
 
 
 from Fire_game.Flame_world.Fire_world_main.player import Player
@@ -36,6 +39,9 @@ class ActionsMonsters(GameActions):
         self.fire_walker = firewalker.FireWalker()
         self.fire_warden = fire_warden.FireWarden()
         self.fire_warrior = firewarrior.FireWarrior()
+        self.inferno_walker = inferno_walker.InfernoWalker()
+        self.inferno_warrior = inferno_warrior.InfernoWarrior()
+        self.inferno_warden = inferno_warden.InfernoWarden()
 
     def do_fight_flame(self, player: Player) -> None:
         self.flame.set_game_loop(self._game_loop)
@@ -64,6 +70,18 @@ class ActionsMonsters(GameActions):
     def do_fight_fire_warrior(self, player: Player) -> None:
         self.fire_warrior.set_game_loop(self._game_loop)
         self.fire_warrior.start_fight(player)
+
+    def do_fight_inferno_walker(self, player: Player) -> None:
+        self.inferno_walker.set_game_loop(self._game_loop)
+        self.inferno_walker.start_fight(player)
+
+    def do_fight_inferno_warrior(self, player: Player) -> None:
+        self.inferno_warrior.set_game_loop(self._game_loop)
+        self.inferno_warrior.start_fight(player)
+
+    def do_fight_inferno_warden(self, player: Player) -> None:
+        self.inferno_warden.set_game_loop(self._game_loop)
+        self.inferno_warden.start_fight(player)
 
 
 class ActionsMovements(GameActions):
@@ -175,14 +193,22 @@ class ActionsMovements(GameActions):
             exit_game(statement.exit_door_answers_no)
         else:
             self.game_loop('pre_fight_inferno', player)
-    def pre_fight_inferno(self, player: Player) -> None:
+
+    def do_game_pre_fight_inferno(self, player: Player) -> None:
         player_print(statements.pre_inferno_statement)
         pa = get_player_input(statements.pre_inferno_question,
                               statements.pre_inferno_answers)
-        if pa.lower() == 'no':
-            exit_game(statements.pre_inferno_answers_no)
+        if pa.lower() == 'surrender':
+            print(statements.pre_inferno_answers_surrender)
+            self.set_game_loop('end_game_surrender')
         else:
             self.set_game_loop('fight_inferno_series')
+
+    def do_game_end_game_surrender(self, player: Player) -> None:
+        exit_game(statements.end_game_surrender_statments)
+
+    def do_game_end_game_fight(self, player: Player) -> None:
+        exit_game(statements.end_game_fight_statement)
 
 
 class Actions(object):
@@ -219,6 +245,16 @@ class Actions(object):
         self._map['flame_warden'] = self._monsters.do_fight_flame_warden
         self._map['fire_warden'] = self._monsters.do_fight_fire_warden
         self._map['fire_warrior'] = self._monsters.do_fight_fire_warrior
+        self._map['exit_door'] = self._movements.do_game_exit_door
+        self._map['pre_fight_inferno'] = \
+            self._movements.do_game_pre_fight_inferno
+        self._map['end_game_surrender'] = \
+            self._movements.do_game_end_game_surrender
+        self._map['fight_inferno_series'] = self._monsters.inferno_walker
+        self._map['inferno_warrior'] = self._monsters.inferno_warrior
+        self._map['inferno_warden'] = self._monsters.inferno_warden
+        self._map['inferno_end'] = self._movements.do_game_end_game_fight
+
 
     def do_action(self, action: str, player: Player) -> None:
         if action in self._map:
